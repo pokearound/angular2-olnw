@@ -27,10 +27,13 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Deploying to Github Pages
 
-`sudo npm i -g angular-cli-ghpages
-ng build --prod --aot
-cp dist/index.html dist/404.html
-sudo ngh --no-silent --email=name@domain.com`
+    sudo npm i -g angular-cli-ghpages
+    
+    ng build --prod --aot
+    
+    cp dist/index.html dist/404.html
+    
+    sudo ngh --no-silent --email=name@domain.com`
 
 ## Further help
 
