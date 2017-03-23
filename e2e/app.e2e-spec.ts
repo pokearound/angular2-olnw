@@ -1,10 +1,10 @@
-import { OlnwPage } from './app.po';
+import { Angular2OlnwPage } from './app.po';
 
-describe('olnw App', function() {
-  let page: OlnwPage;
+describe('angular2-olnw App', () => {
+  let page: Angular2OlnwPage;
 
   beforeEach(() => {
-    page = new OlnwPage();
+    page = new Angular2OlnwPage();
   });
 
   it('should display message saying app works', () => {

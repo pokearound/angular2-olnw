@@ -1,7 +1,3 @@
-import { AppAboutComponent } from './app.about.component';
-import { AppDefaultComponent } from './app.default.component';
-import { PageNotFoundComponent } from './app.pnf.component';
-import { OpenLinkInNewWindowDirective } from './olinw.directive';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -9,18 +5,22 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-
+import { AppAboutComponent } from "app/app.about.component";
+import { AppHomeComponent } from "app/app.home.component";
+import { AppDefaultComponent } from "app/app.default.component";
+import { PageNotFoundComponent } from "app/app.pnf.component";
+import { OpenLinkInNewWindowDirective } from "app/olinw.directive";
 
 const appRoutes: Routes = [
   { path: '', pathMatch: 'full', component: AppDefaultComponent },
-  { path: 'home', component: AppComponent },
+  { path: 'home', component: AppHomeComponent },
   { path: 'about', component: AppAboutComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
   declarations: [
-    AppComponent, AppAboutComponent, AppDefaultComponent, PageNotFoundComponent, OpenLinkInNewWindowDirective
+    AppComponent, AppHomeComponent, AppAboutComponent, AppDefaultComponent, PageNotFoundComponent, OpenLinkInNewWindowDirective
   ],
   imports: [
     BrowserModule,
@@ -28,7 +28,7 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [{ provide: Window, useValue: window }],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

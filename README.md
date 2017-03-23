@@ -1,8 +1,11 @@
-# Olnw
+# Angular2Olnw
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
+[Demo](https://anandchakru.github.io/angular2-olnw/)'s Opening a router-link in new window. Uses Custom directives and native js window.
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.4.
 
 ## Development server
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
@@ -24,8 +27,11 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Deploying to Github Pages
 
-Run `ng github-pages:deploy` to deploy to Github Pages.
+`sudo npm i -g angular-cli-ghpages
+ng build --prod --aot
+cp dist/index.html dist/404.html
+sudo ngh --no-silent --email=name@domain.com`
 
 ## Further help
 
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

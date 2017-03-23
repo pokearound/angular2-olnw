@@ -1,8 +1,10 @@
 <h1>
     {{title}}
     <ul>
-        <li><a routerLink="/main/home" routerLinkActive="active" olinw007> OLNW</a></li>
-        <li><a routerLink="/main/home" routerLinkActive="active"> OLNW - NOT</a></li>
+        <li><a routerLink="/home" routerLinkActive="active"> Home [Same Window]</a></li>
+        <li><a routerLink="/about" routerLinkActive="active"> About [Same Window]</a></li>
+        <li><a routerLink="/about" routerLinkActive="active" olinw007> About [New Window]</a></li>
+        <li><a routerLinkActive="active" olinw007> Default [New Window]</a></li>
     </ul>
     <div style="background-color:#eee;">
         <router-outlet></router-outlet>
