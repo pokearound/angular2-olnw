@@ -1,6 +1,6 @@
 # Angular2Olnw
 
-[Demo](https://anandchakru.github.io/angular2-olnw/)'s Opening a router-link in new window. Uses Custom directives and native js window.
+[Demo](https://pokearound.github.io/angular2-olnw/)'s Opening a router-link in new window. Uses Custom directives and native js window.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.4.
 
